@@ -1,11 +1,7 @@
-# ds4400-gene-expression
+# DS4400 Classifying Acute Forms of Leukemia using Gene Expression Data
 Final project files and data repository for DS4400 Machine Learning and Data Mining at Northeastern University
 
-# Classifying Acute Forms of Leukemia using Gene Expression Data
-
 # Abstract: In several sentences, summarize your project (e.g., think of a Tweet).
-
-# Documentation:
 
 # Introduction: Summarize your project report in several paragraphs.
 ## What is the problem? For example, what are you trying to solve? Describe the motivation.
@@ -14,8 +10,9 @@ Final project files and data repository for DS4400 Machine Learning and Data Min
 ## Why is the approach a good approach compared with other competing methods? For example, did you find any reference for solving this problem previously? If there are, how does your approach differ from theirs?
 ## What are the key components of my approach and results? Also, include any specific limitations.
 
-# Setup: Set up the stage for your experimental results.
+# Setup: Set up the stage for your experimental results
 ## Describe the dataset, including its basic statistics.
+The data set we're using comes from 
 ## Describe the experimental setup, including what models you are going to run, what parameters you plan to use, and what computing environment you will execute on.
 ## Describe the problem setup (e.g., for neural networks, describe the network structure that you are going to use in the experiments).
 
@@ -28,3 +25,5 @@ Final project files and data repository for DS4400 Machine Learning and Data Min
 # Conclusion: In several sentences, summarize what you have done in this project.
 
 # References: Put any links, papers, blog posts, or GitHub repositories that you have borrowed from/found useful here
+T. R. Golub et al. ,Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring.Science286, 531-537(1999).DOI:10.1126/science.286.5439.531
+Kaggle repository with data: https://www.kaggle.com/datasets/crawford/gene-expression
