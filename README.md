@@ -26,4 +26,4 @@ The data set we're using comes from
 
 # References: Put any links, papers, blog posts, or GitHub repositories that you have borrowed from/found useful here
 T. R. Golub et al. ,Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring.Science286, 531-537(1999).DOI:10.1126/science.286.5439.531
-Kaggle repository with data: https://www.kaggle.com/datasets/crawford/gene-expression
+<br>Kaggle repository with data: https://www.kaggle.com/datasets/crawford/gene-expression
