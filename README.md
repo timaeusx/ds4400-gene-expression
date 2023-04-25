@@ -1,5 +1,6 @@
 # Classifying Acute Forms of Leukemia using Gene Expression Data
 Final project files and data repository for DS4400 Machine Learning and Data Mining at Northeastern University
+Amanda Bell, Timothy Wang, Jasmine Wong
 
 ## Abstract
 _In several sentences, summarize your project (e.g., think of a Tweet)._
@@ -16,6 +17,7 @@ Leukemia is a family of blood cancers, the exact cause of which remains unknown.
 - Acute Lymphocytic Leukemia (ALL)
 - Chronic Myeloid Leukemia (CML)
 - Chronic Lymphocitic Leukemia (CLL)
+
 as well as several other minor types.
 
 It is difficult to classify the different types of leukemia by symptoms alone, but some predictive factors like genetics, family history, and environmental exposure have been observed in correlation. With recent improvements in sequencing technologies and advancements in computing power, gene expression analysis is rapidly becoming a feasible option for diagnosing and treating many types of cancers, including leukemia.
@@ -37,6 +39,7 @@ In general, the dataset has the following features:
   - Absent (A)
   - Present (P)
   - Marginal (M)
+  
 We predict a binary target variable, indicating either AML or ALL.
 
 The following models were applied to the dataset:
@@ -50,6 +53,16 @@ The following models were applied to the dataset:
 _Describe the results from your experiments._
 - Main results: Describe the main experimental results you have; this is where you highlight the most interesting findings.
 - Supplementary results: Describe the parameter choices you have made while running the experiments. This part goes into justifying those choices.
+
+### Principal Component Analysis/Regression
+
+### Logistic Regression (with and without PCA dimensionality reduction)
+
+### Random Forest Classification (with and without dimensionality reduction)
+
+### K-Nearest Neighbors Classification
+
+### Fully Connected Neural Network
 
 ## Discussion
 _Discuss the results obtained above. If your results are very good, see if you could compare them with some existing approaches that you could find online. If your results are not as good as you had hoped for, make a good-faith diagnosis about what the problem is._
