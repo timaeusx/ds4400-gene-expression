@@ -33,6 +33,8 @@ As a caveat, we note that the dataset used is limited in size, as although there
 - Describe the experimental setup, including what models you are going to run, what parameters you plan to use, and what computing environment you will execute on.
 - Describe the problem setup (e.g., for neural networks, describe the network structure that you are going to use in the experiments).
 
+The dataset used was published by Golub et al. [1] and contains the genetic genetic data of 72 patients. 
+
 In general, the dataset has the following features:
 - Gene Description 
 - Gene Accession Number
@@ -43,6 +45,8 @@ In general, the dataset has the following features:
   - Marginal (M)
   
 We predict a binary target variable, indicating either AML or ALL.
+
+The dataset contained more cases of ALL versus AML, with a ratio of 47:25.
 
 The following models were applied to the dataset:
 - Principal Component Analysis/Regression
