@@ -7,11 +7,11 @@ Project code can be found in the [notebook](https://github.com/timaeusx/ds4400-g
 
 ## Abstract
 
-Leukemia is a family of blood cancers that is predicted to affect almost 60,000 Americans in 2023. Different forms of leukemia require differnt treatments, so it is essential that physicians have as many tools as possible to help them classify differnt forms of leukemia. Using a dataset published by Golub et al. [1], this project aims to investigate and build a machine learning model that can effectively help physicians differentiate two acute forms of leukemia: Acute Myeloid Leukemia (AML) and Acute Lymphocytic Leukemia (ALL), which are severe conditions with low five-year survival rates. In search of the best model, logistic regressors, random forest classifiers, k-nearest neighbors classifiers, and a fully connected neural network were tested. Additional attempts to improve the performance of the models included hyperparameter tuning, feature selection, cross validation and dimension reduction. Ultimately, out of the nine machine learning models built, the model with the highest accuracy was the logistic regressor without principal component analysis, which performed with approximately 97% accuracy. In a testing set of 34 patients, the one error was incorrectly classifying ALL as AML.
+Leukemia is a family of blood cancers that is predicted to affect almost 60,000 Americans in 2023. Different forms of leukemia require differnt treatments, so it is essential that physicians have as many tools as possible to help them classify differnt forms of leukemia. Using a dataset published by Golub et al., this project aims to investigate and build a machine learning model that can effectively help physicians differentiate two acute forms of leukemia: Acute Myeloid Leukemia (AML) and Acute Lymphocytic Leukemia (ALL), which are severe conditions with low five-year survival rates. In search of the best model, logistic regressors, random forest classifiers, k-nearest neighbors classifiers, and a fully connected neural network were tested. Additional attempts to improve the performance of the models included hyperparameter tuning, feature selection, cross validation and dimension reduction. Ultimately, out of the nine machine learning models built, the model with the highest accuracy was the logistic regressor without principal component analysis, which performed with approximately 97% accuracy. In a testing set of 34 patients, the one error was incorrectly classifying ALL as AML.
 
 ## Introduction
 
-Leukemia is a family of blood cancers, the exact cause of which remains unknown. The American Cancer Society estimates that in 2023, almost 60,000 new cases of leukemia and 23,710 deaths from leukemia will occur [2]. There are four major types of leukemia:
+Leukemia is a family of blood cancers, the exact cause of which remains unknown. The American Cancer Society estimates that in 2023, almost 60,000 new cases of leukemia and 23,710 deaths from leukemia will occur [1]. There are four major types of leukemia:
 - Acute Myeloid Leukemia (AML)
 - Acute Lymphocytic Leukemia (ALL)
 - Chronic Myeloid Leukemia (CML)
@@ -21,13 +21,13 @@ as well as several other minor types.
 
 It is difficult to classify the different types of leukemia by symptoms alone, but some predictive factors like genetics, family history, and environmental exposure have been observed in correlation. With recent improvements in sequencing technologies and advancements in computing power, gene expression analysis is rapidly becoming a feasible option for diagnosing and treating many types of cancers, including leukemia.
 
-This project aims to investigate and build a machine learning model that can effectively help physicians accurately diagnose different forms of leukemia. A high accuracy model can play a significant role in helping to deliver optimal treatment plans to combat these deadly cancers. Along with traditional data analysis methods such as logistic regressors, random forests, and nearest-neighbors classifiers, neural networks represent interesting areas of exploration for solving the problem of classifying and differentiating between the various types of leukemia. We apply the aforementioned methods to a dataset published by Golub et al. [1], connecting gene analysis metrics with diagnosed instances of AML and ALL. Our approaches attempt to use a wide array of gene expression features to predict the occurence of either AML or ALL in each case.
+This project aims to investigate and build a machine learning model that can effectively help physicians accurately diagnose different forms of leukemia. A high accuracy model can play a significant role in helping to deliver optimal treatment plans to combat these deadly cancers. Along with traditional data analysis methods such as logistic regressors, random forests, and nearest-neighbors classifiers, neural networks represent interesting areas of exploration for solving the problem of classifying and differentiating between the various types of leukemia. We apply the aforementioned methods to a dataset published by Golub et al. [2], connecting gene analysis metrics with diagnosed instances of AML and ALL. Our approaches attempt to use a wide array of gene expression features to predict the occurence of either AML or ALL in each case.
 
 As a caveat, we note that the dataset used is limited in size, as although there are upwards of 7,000 features, there are only 72 total data points. This is most likely because is often difficult to obtain patient data due to a combination of privacy, disease progression, and other factors. Another limitation is that there is a label imbalance in the data; that is, the dataset contains 42 data points associated with ALL, but only 25 data points associated with AML.
 
 ## Dataset and experimental design
 
-The dataset used was published by Golub et al. [1] and contains the genetic data of 72 patients. 
+The dataset used was published by Golub et al. and contains the genetic data of 72 patients. 
 
 In general, the dataset has the following features:
 - Gene Description 
@@ -83,9 +83,9 @@ _In several sentences, summarize what you have done in this project._
 This project explored the classification problem of two Leukemia types (AML and ALL) through building nine machine learning models. The machine learning models built include Principal Component Analysis and Regression, Logistic Regression without PCA, Logistic Regression with PCA, a Random Forest Classifier without PCA, a Random Forest Classifier with Reduced Number of Features using Feature Importances, a Random Forest Classifier with PCA, a Random Classifier with Selection of Genes indicated by AML and ALL, K-Nearest Neighbors, and a Fully Connected Neural Network. The best performing model was the Logistic Regressor without PCA dimension reduction, which performed with a 97% accuracy. Since the Logistic Regressor was one of the first models our team built, we worked on attempting to improve other models such as the Random Forest Classifier through adjusting strategies such as testing different features by filtering with feature importance, princial component analysis, and only training on a subset of 70 genes associated with ALL and AML. This project successfully resulted in a high-accuracy classifier that was able to distinguish AML and ALL, as well as a meaningful learning experience about machine learning through the iterative process of building models, testing them, and improving them through trying different strategies.
 
 ## References
-[1] T. R. Golub et al., Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring. Science 286, 531-537 (1999). DOI:10.1126/science.286.5439.531
+[1] American Cancer Society. Cancer Facts & Figures 2023. Atlanta, Ga: American Cancer Society; 2023.
 
-[2] American Cancer Society. Cancer Facts & Figures 2023. Atlanta, Ga: American Cancer Society; 2023.
+[2] T. R. Golub et al., Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring. Science 286, 531-537 (1999). DOI:10.1126/science.286.5439.531
 
 Kaggle repository with data: https://www.kaggle.com/datasets/crawford/gene-expression
 
