@@ -63,6 +63,7 @@ _Describe the results from your experiments._
 ### Principal Component Analysis/Regression
 
 ### Logistic Regression (with and without PCA dimensionality reduction)
+Logistic regression was one of our best performing models even without changing any parameters or reducing features with an accuracy of 97% and only 1 misclassification where an AML patient was predicted to have ALL. We were curious if we could improve performance even more by reducing the number of dimensions with PCA considering our dataset had over 7000 features, however we saw a drop in performance to 88% accuracy and an increase to 4 false negatives. 
 
 ### Random Forest Classification (with and without dimensionality reduction)
 
@@ -79,3 +80,5 @@ _In several sentences, summarize what you have done in this project._
 ## References
 [1] T. R. Golub et al., Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring. Science 286, 531-537 (1999). DOI:10.1126/science.286.5439.531
 <br>Kaggle repository with data: https://www.kaggle.com/datasets/crawford/gene-expression
+<br> Genes for ALL: https://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/#:~:text=Overview&text=Acute%20lymphoblastic%20leukemias%20most%20frequently,%2C%20and%20USP7%20%5B2%5D.&text=WT1fs%2C%20NOTCH1%20Mutation%2C%20NOTCH1%20Missense,acute%20lymphoblastic%20leukemia%20%5B2%5D.
+<br> Gene for AML: Lagunas-Rangel, F. A., Chávez-Valencia, V., Gómez-Guijosa, M. Á., & Cortes-Penagos, C. (2017). Acute Myeloid Leukemia-Genetic Alterations and Their Clinical Prognosis. International journal of hematology-oncology and stem cell research, 11(4), 328–339.
