@@ -63,9 +63,10 @@ _Describe the results from your experiments._
 ### Principal Component Analysis/Regression
 
 ### Logistic Regression (with and without PCA dimensionality reduction)
-Logistic regression was one of our best performing models even without changing any parameters or reducing features with an accuracy of 97% and only 1 misclassification where an AML patient was predicted to have ALL. We were curious if we could improve performance even more by reducing the number of dimensions with PCA considering our dataset had over 7000 features, however we saw a drop in performance to 88% accuracy and an increase to 4 false negatives. 
+Logistic regression was one of our best performing models even without changing any parameters or reducing features with a test accuracy of 97% and only 1 misclassification where an AML patient was predicted to have ALL. We were curious if we could improve performance even more by reducing the number of dimensions with PCA considering our dataset had over 7000 features, however we saw a drop in performance to 88% accuracy and an increase to 4 false negatives. 
 
-### Random Forest Classification (with and without dimensionality reduction)
+### Random Forest Classification (with and without dimensionality reduction, reduced number of features)
+Random forest classifier started off initially with a train error of 0.0 and a test error of 0.24 and a train F1 of 1.0 and a test F1 of 0.83 potentially indicating some overfitting of the model to the dataset. Hyperparameter tuning for n_estimators, min_samples_leaf, and min_samples_split proved this to be true with an increase in test error to 0.26 and a decrease in F1 to 0.82. 9 patients were classified with AML although they were ALL patients. Poor classification performance was thought to be a result of too many features for the random forest classifier to handle so we tried 3 different approaches. First we took the 100 most important features, found the best selection of those features (70-80 total) going in order of importance, and trained a model to get a test error of 0.12 and test F1 of 0.91 with only 4 misclassifications of ALL as AML. Then we tried dimension reduction using PCA but achieved only similar results as we had originally. Lastly, we were curious about using only genes indicated in ALL and AML so we selected a subset of about 70 of those genes and used them to train another RFC but similarly achieved only similar results as we had originally.
 
 ### K-Nearest Neighbors Classification
 
