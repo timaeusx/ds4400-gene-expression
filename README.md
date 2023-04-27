@@ -2,17 +2,13 @@
 Final project files and data repository for DS4400 Machine Learning and Data Mining at Northeastern University
 Amanda Bell, Timothy Wang, Jasmine Wong
 
-## Abstract
-_In several sentences, summarize your project (e.g., think of a Tweet)._
+Project code can be found in the [notebook](https://github.com/timaeusx/ds4400-gene-expression/blob/main/DS_4400_Gene_Expression_Project_Code.ipynb) or on [Google Colab](https://colab.research.google.com/drive/163GDGjxep-fIH8uGLzC3-ZxdNnKgV24I?usp=sharing).
 
-Leukemia is a family of blood cancers that is predicted to affect almost 60,000 Americans in 2023. Different forms of leukemia require differnt treatments, so it is essential that physicians have as many tools as possible to help them classify differnt forms of leukemia. Using a dataset published by Golub et al. [1], this project aims to investigate and build a machine learning model that can effectively help physicians differentiate two acute forms of leukemia: Acute Myeloid Leukemia(AML) and Acute Lymphocytic Leukemia(ALL), which are severe conditions with low five-year survival rates. In search of the best model, logistic regressors, random forest classifiers, k-nearest neighbors classifiers, and a fully connected neural network were tested. Additional attempts to improve the performance of the models included hyperparameter tuning, cross validation and dimension reduction. Ultimately, the model with the highest accuracy was the logistic regressor without principal component analysis, which performed with approximately 97% accuracy. In a testing set of 34 patients, the one error was incorrectly classifying ALL as AML.
+## Abstract
+
+Leukemia is a family of blood cancers that is predicted to affect almost 60,000 Americans in 2023. Different forms of leukemia require differnt treatments, so it is essential that physicians have as many tools as possible to help them classify differnt forms of leukemia. Using a dataset published by Golub et al. [1], this project aims to investigate and build a machine learning model that can effectively help physicians differentiate two acute forms of leukemia: Acute Myeloid Leukemia (AML) and Acute Lymphocytic Leukemia (ALL), which are severe conditions with low five-year survival rates. In search of the best model, logistic regressors, random forest classifiers, k-nearest neighbors classifiers, and a fully connected neural network were tested. Additional attempts to improve the performance of the models included hyperparameter tuning, cross validation and dimension reduction. Ultimately, the model with the highest accuracy was the logistic regressor without principal component analysis, which performed with approximately 97% accuracy. In a testing set of 34 patients, the one error was incorrectly classifying ALL as AML.
 
 ## Introduction
-- What is the problem? For example, what are you trying to solve? Describe the motivation.
-- Why is this problem interesting? Is this problem helping us solve a bigger task in some way? Where would we find use cases for this problem?
-- What is the approach you propose to tackle the problem? What approaches make sense for this problem? Would they work well or not? Feel free to speculate here based on what we taught in class.
-- Why is the approach a good approach compared with other competing methods? For example, did you find any reference for solving this problem previously? If there are, how does your approach differ from theirs?
-- What are the key components of my approach and results? Also, include any specific limitations.
 
 Leukemia is a family of blood cancers, the exact cause of which remains unknown. The American Cancer Society estimates that in 2023, almost 60,000 new cases of leukemia and 23,710 deaths from leukemia will occur. There are four major types of leukemia:
 - Acute Myeloid Leukemia (AML)
@@ -33,7 +29,7 @@ As a caveat, we note that the dataset used is limited in size, as although there
 - Describe the experimental setup, including what models you are going to run, what parameters you plan to use, and what computing environment you will execute on.
 - Describe the problem setup (e.g., for neural networks, describe the network structure that you are going to use in the experiments).
 
-The dataset used was published by Golub et al. [1] and contains the genetic genetic data of 72 patients. 
+The dataset used was published by Golub et al. [1] and contains the genetic data of 72 patients. 
 
 In general, the dataset has the following features:
 - Gene Description 
