@@ -70,7 +70,7 @@ Random forest classifier started off initially with a train error of 0.0 and a t
 The K-Nearest Neighbors Classifier performed relatively well on the testing data, with a prediction accuracy of 88.24%. In order to build the KNN classifier, we used GridSearch to find the best parameter for the number of neighbors. A n_neighbors that is too large can lead to underfitting, while a n_neighbors that is too small can lead to overfitting. Through GridSearch, it was extracted that the optimal number of neighbors was 4, and this was used to build the final KNN classifier.
 
 ### Fully Connected Neural Network
-The neural network used had 7129 input units, 128 hidden units, and 2 output units. The network achieved a minimum cross entropy loss of about 0.08, and accuracy score of 71.05%. 
+The neural network used had 7129 input units, 128 hidden units, and 2 output units. ReLU was used as the activation function for the hidden layer, and the log-softmax function was used to convert the output to a probability distribution. The network was trained using a stochastic gradient descent optimizer, with negative log-likelihood as the loss function. After 50 epochs, the network achieved a minimum NLL loss of about 0.08, and accuracy score of 71.05%. 
 
 ## Discussion
 _Discuss the results obtained above. If your results are very good, see if you could compare them with some existing approaches that you could find online. If your results are not as good as you had hoped for, make a good-faith diagnosis about what the problem is._
