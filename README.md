@@ -53,9 +53,6 @@ The following models were applied to the dataset:
 Grid seach cross validation was used to determine the ideal parameters for PCA, random forest, and KNN models.
 
 ## Results
-_Describe the results from your experiments._
-- Main results: Describe the main experimental results you have; this is where you highlight the most interesting findings.
-- Supplementary results: Describe the parameter choices you have made while running the experiments. This part goes into justifying those choices.
 
 ### Principal Component Analysis/Regression
 Using cross validation, we determined that a linear regression model run on the dataset reduced to 35 principal components achieved the lowest mean squared error (MSE) score. This model was validated on the test set and achieved an R^2 score of about 0.72 and MSE score of 0.06. We applied this dimensionality reduction to the rest of the models to see if there was any improvement, but in most cases saw a reduction in accuracy.
@@ -85,10 +82,10 @@ This project explored the classification problem of two Leukemia types (AML and 
 
 [2] T. R. Golub et al., Molecular Classification of Cancer: Class Discovery and Class Prediction by Gene Expression Monitoring. Science 286, 531-537 (1999). DOI:10.1126/science.286.5439.531
 
-Kaggle repository with data: https://www.kaggle.com/datasets/crawford/gene-expression
+[3] Comparison Kaggle Repository: https://www.kaggle.com/code/varimp/gene-expression-classification
+
+Dataset adapted from: https://www.kaggle.com/datasets/crawford/gene-expression
 
 Genes for ALL: https://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/#:~:text=Overview&text=Acute%20lymphoblastic%20leukemias%20most%20frequently,%2C%20and%20USP7%20%5B2%5D.&text=WT1fs%2C%20NOTCH1%20Mutation%2C%20NOTCH1%20Missense,acute%20lymphoblastic%20leukemia%20%5B2%5D.
 
 Gene for AML: Lagunas-Rangel, F. A., Chávez-Valencia, V., Gómez-Guijosa, M. Á., & Cortes-Penagos, C. (2017). Acute Myeloid Leukemia-Genetic Alterations and Their Clinical Prognosis. International journal of hematology-oncology and stem cell research, 11(4), 328–339.
-
-[3] Comparison Kaggle Repository: https://www.kaggle.com/code/varimp/gene-expression-classification
