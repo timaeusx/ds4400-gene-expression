@@ -74,7 +74,7 @@ The neural network used had 7129 input units, 128 hidden units, and 2 output uni
 
 ## Discussion
 
-After experiementing with a number of machine learning models, we were able to build a Logistic Regression model that performed with 97% accuracy. With only one incorrect classification, this is a very powerful model that can provide value to medical professionals who might need to differentiate between AML vs. ALL.
+After experiementing with a number of machine learning models, we were able to build a Logistic Regression model that performed with 97% accuracy. With only one incorrect classification, this is a very powerful model that can provide value to medical professionals who might need to differentiate between AML vs. ALL. Previously, another user on Kaggle[3], ANDREW64, attempted a similar project with the gene experession dataset. They tested a number of models such as K-means and Support Vector Machine, and also found that the logistic regressor performed the best for the large number of genes in the dataset. Since both projects came to similar conclusions, the validity and excellent performance of the logistic regressor model becomes more credible. 
 
 ## Conclusion
 
@@ -90,3 +90,5 @@ Kaggle repository with data: https://www.kaggle.com/datasets/crawford/gene-expre
 Genes for ALL: https://www.mycancergenome.org/content/disease/acute-lymphoblastic-leukemia/#:~:text=Overview&text=Acute%20lymphoblastic%20leukemias%20most%20frequently,%2C%20and%20USP7%20%5B2%5D.&text=WT1fs%2C%20NOTCH1%20Mutation%2C%20NOTCH1%20Missense,acute%20lymphoblastic%20leukemia%20%5B2%5D.
 
 Gene for AML: Lagunas-Rangel, F. A., Chávez-Valencia, V., Gómez-Guijosa, M. Á., & Cortes-Penagos, C. (2017). Acute Myeloid Leukemia-Genetic Alterations and Their Clinical Prognosis. International journal of hematology-oncology and stem cell research, 11(4), 328–339.
+
+[3] Comparison Kaggle Repository: https://www.kaggle.com/code/varimp/gene-expression-classification
