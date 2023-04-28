@@ -27,7 +27,7 @@ As a caveat, we note that the dataset used is limited in size, as although there
 
 ## Dataset and experimental design
 
-The dataset used was published by Golub et al. and contains the genetic data of 72 patients. 
+The dataset used was published by Golub et al. and contains the genetic data of 72 patients. There are approximately 7000 genes in the dataset, representing the numerous genes that were recorded from the patients. There were no null values in the dataset.
 
 In general, the dataset has the following features:
 - Gene Description 
@@ -73,12 +73,10 @@ The K-Nearest Neighbors Classifier performed relatively well on the testing data
 The neural network used had 7129 input units, 128 hidden units, and 2 output units. ReLU was used as the activation function for the hidden layer, and the log-softmax function was used to convert the output to a probability distribution. The network was trained using a stochastic gradient descent optimizer, with negative log-likelihood as the loss function. After 50 epochs, the network achieved a minimum NLL loss of about 0.08, and accuracy score of 71.05%. 
 
 ## Discussion
-_Discuss the results obtained above. If your results are very good, see if you could compare them with some existing approaches that you could find online. If your results are not as good as you had hoped for, make a good-faith diagnosis about what the problem is._
 
 After experiementing with a number of machine learning models, we were able to build a Logistic Regression model that performed with 97% accuracy. With only one incorrect classification, this is a very powerful model that can provide value to medical professionals who might need to differentiate between AML vs. ALL.
 
 ## Conclusion
-_In several sentences, summarize what you have done in this project._
 
 This project explored the classification problem of two Leukemia types (AML and ALL) through building nine machine learning models. The machine learning models built include Principal Component Analysis and Regression, Logistic Regression without PCA, Logistic Regression with PCA, a Random Forest Classifier without PCA, a Random Forest Classifier with Reduced Number of Features using Feature Importances, a Random Forest Classifier with PCA, a Random Classifier with Selection of Genes indicated by AML and ALL, K-Nearest Neighbors, and a Fully Connected Neural Network. The best performing model was the Logistic Regressor without PCA dimension reduction, which performed with a 97% accuracy. Since the Logistic Regressor was one of the first models our team built, we worked on attempting to improve other models such as the Random Forest Classifier through adjusting strategies such as testing different features by filtering with feature importance, princial component analysis, and only training on a subset of 70 genes associated with ALL and AML. This project successfully resulted in a high-accuracy classifier that was able to distinguish AML and ALL, as well as a meaningful learning experience about machine learning through the iterative process of building models, testing them, and improving them through trying different strategies.
 
